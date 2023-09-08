@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flexbox</title>
+    <style>
+     .contanier{
+        height: 500px;
+        width: 100%;
+         background-color: aqua;
+         display:flex;/*initialize the container as a flexbox*/
+         /*flex properties for flex container*/
+        /* 1.flex-direction:row,column,column-reverse,row-reverse;/*default value of flex direction is row*/
+        /* 2.flex-wrap:wrap,wrap-reverse,no wrap;/*default value of flex wrap is no wrap*/
+        /* short hand property:flex-flow:row-reverse wrap;*/
+        /*3.justify-content: center;//used to place element in center;
+       /* justify-content:space-between;//beech me space equal
+          justify-content: space-evenly;//block ke aas pass ki space equal
+          justify-content:space-around;//block ke around ki space equal
+          justify-content:flex-end;//end pr lana
+          justify-content:flex-start; //start pr lana  */
+        /*4.align-items:center;/*used to place vertically center
+           align-items:stretch;
+           align-items:flex-end;
+           align-items:flex-start;*/
+    
+     }
+     .item{
+        /*Flex property for a flex item*/ 
+          flex-grow: ;
+         width:200px;
+         height:200px;
+         background-color: tomato;
+         border:2px solid green;
+         padding:3px;
+         margin:10px; 
+     }
+     #item2{
+        order:2;/*last me chala jayega*/
+     }
+     #item3{
+       /* flex-grow: 3;/*perticular item ko badana*/
+        /*flex-shrink:2 ;/*perticular item ko shrink krna*/
+        align-self: center;/*perticular item center ho jayega*/
+     }
+    </style>
+</head>
+<body>
+    <h1>This is Flexbox Tutorial</h1>
+    <div class="contanier">
+    <div class="item" id="item1">First Box</div>
+    <div class="item" id="item2">Second Box</div>
+    <div class="item" id="item3">Third Box</div>
+
+    </div>
+
+</body>
+</html>

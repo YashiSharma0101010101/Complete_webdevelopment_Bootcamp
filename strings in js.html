@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script|String and string methods</title>
+</head>
+<body>
+    <div class="container">
+      <h1>Yashi Sharma</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo quam quaerat repellat quisquam! Odio quas molestiae quasi. Ex dicta obcaecati iusto distinctio deserunt est quia eveniet amet, consequuntur nisi esse, quo in dolor voluptatum!</p>
+    </div>
+    <script>
+        var String="this";
+        console.log(String);
+        var name="yashi";
+        var message="yashi is a good girl";
+        console.log(String+name+message);//concatenation
+        //template literals in js
+        //allow you to embed javascript expressions inside a string
+        var temp=`${name} is a nice person and her message is ${message}`;
+        console.log(temp);
+        var len=name.length;
+        console.log(`length of name is ${len}`);
+        //escape sequence 
+        console.log("hello world\n\t\bgood evening");//\t for spaces
+    </script>
+    
+</body>
+</html>

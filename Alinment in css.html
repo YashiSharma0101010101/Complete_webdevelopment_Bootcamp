@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <style>
+        *{
+            box-sizing: border box;
+        }
+    body{
+    font-family: 'Allison', cursive;
+    }
+    .container{
+         width:900px; 
+         border:3px solid purple; 
+         margin:3px auto ; /*<!--auto is used for centre position--> */
+        background:rgb(223, 150, 86);
+
+    }
+    .item{
+        border:3px solid gray;
+        margin:12px 3px;
+        padding:12px 3px;
+        background : rgb(235, 159, 171);
+
+
+    }
+    #Fruit{
+        float:left;
+        width:50%;
+
+
+
+    }
+    #Computer{
+        float:left;
+        width:50%;
+        clear:both; 
+
+    }
+    #Stationary{
+        float:left;
+        width:50%;
+
+    }
+    p,h3{
+
+    }
+    h1{
+         /* margin :23 px;
+         width:455px; */
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Yashi store</h1>
+        <div id="Fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="Firstpara " class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                suscipit, et reprehenderit repellat dolore impedit corporis ut voluptates temporibus voluptatem qui
+                sunt, fugiat ipsum quos delectus inventore quia ratione modi facere sapiente magnam dicta. Aspernatur,
+                facilis!</p>
+                </div>
+            <div id="Computer" class="item">
+                <h3>Computer</h3>
+                <p id="Computerpara " class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                    suscipit, et reprehenderit repellat dolore impedit corporis ut voluptates temporibus voluptatem qui
+                    sunt, fugiat ipsum quos delectus inventore quia ratione modi facere sapiente magnam dicta.
+                    Aspernatur, facilis!</p>
+                    </div>
+                <div id="Stationarypara" class="item">
+                    <h3>Stationary</h3>
+                    <p id="Firstpara " class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Exercitationem suscipit, et reprehenderit repellat dolore impedit corporis ut voluptates
+                        temporibus voluptatem qui sunt, fugiat ipsum quos delectus inventore quia ratione modi facere
+                        sapiente magnam dicta. Aspernatur, facilis!</p>
+                </div>
+            </div>
+</body>
+
+</html>

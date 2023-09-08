@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+    .container{
+       display:flex;
+        }
+    .card{
+       margin: 23px 12px;
+       padding:23px 12px;
+       border:2px solid red;
+       background-color: blanchedalmond;
+       /*Box Shadow:offset-x offset-y color;*/
+      /* box-shadow: 10px 13px green;neeche se shadow*/
+      /* box-shadow: -10px -13px green;uppar se shadow*/
+      /*Box Shadow:offset-x offset-y blur-radius color ;*/
+      /* box-shadow: 10px 13px 10px orange;uppar se blur*/
+      /* box-shadow: -10px -13px 10px orange;neeche se blur*/
+     /*Box Shadow:offset-x offset-y blur-radius spread-radius color ;*/
+      /* box-shadow: 7px 5px 10px 34px pink;*/
+      /*box-shadow: inset 3px 5px green ; andar ki tarf shadow*/
+      /*Multiple box-shadow*/
+     /* box-shadow: 3px 5px green, 4px 6px blue;*/
+        }
+        .card h2{
+          /*text Shadow*/
+         /* text-shadow: 3px 4px red;*/
+          text-shadow: 3px 4px 7px black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="card" id="card-1">
+           <h2> This is C++ Course</h2>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam recusandae mollitia omnis nulla aliquid molestiae culpa at ducimus, neque ipsum natus, consequatur in velit blanditiis corrupti voluptate accusamus vitae id. Eos provident accusamus natus.</p>
+       </div> 
+       <div class="card" id="card-2">
+        <h2>This is Java Course</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sint reprehenderit ab, quam voluptatibus id facere, modi veniam impedit minus aspernatur accusantium repudiandae architecto rem tempore qui eius, illo facilis magnam. Laborum, iure earum! </p>
+        </div>
+        <div class="card" id="card-3">
+            <h2> This is Python Course</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quisquam neque nisi illum provident voluptate ea saepe, laudantium, totam hic aspernatur assumenda quasi iusto officiis sint voluptas nulla! Doloremque ut dolore iste velit quam?</p>
+            </div>
+         </div>
+    
+</body>
+</html>

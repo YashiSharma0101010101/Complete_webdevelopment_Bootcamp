@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selector</title>
+    <style>
+    h1{
+        background-color: aquamarine;
+        color:chartreuse;
+        font-weight: bold;
+        text-align:center;
+
+    }
+   /* div p{
+        color:yellow;
+        font-weight:bold;
+        background-color:green;
+    }*/
+    /* if p is contained by any li which is contained by div*/
+    /*div li p{
+        color:rgb(218, 218, 132);
+        font-weight:bold;
+        background-color:rgb(60, 119, 60);
+    }*/
+    /*if p is right inside div then this css will be applied(div ke ander jitne bhi p)*/
+    /*div > p{
+        color:brown;
+        font-weight:bold;
+        background-color:pink;
+
+    }*/
+    /*if p is right after div ie.p is the next sibiling of div(previous sibiling div ho)*/
+    div +p {
+        color:rgb(224, 128, 18);
+        font-weight:bold;
+        background-color:rgb(134, 48, 62);
+
+    }
+    </style>
+</head>
+<body>
+  <h1>This is more on Selector</h1>
+  <div class="contanier">
+      <div class="row">
+          <ul>
+              <li class="item"><p>This is another paragraph in li</p></li>
+              <li>this will not get affected</li>
+          </ul>
+        <p>This is a paragraph</p>  
+      </div>
+      <p>This is a another Paragraph</p>
+  </div>
+  <p>This is outermost paragraph</p>
+
+</body>
+</html>

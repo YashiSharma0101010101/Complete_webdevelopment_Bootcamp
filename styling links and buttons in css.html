@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors and more designing</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background: rgb(223, 245, 201);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+            /* height: 200px; */
+
+        }
+
+        .btn {
+            background-color: coral;
+            padding: 4px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            /* font-size:13px; */
+
+        }
+
+        a {
+            text-decoration: none;
+            /*used to remove underline from Read More button*/
+        }
+
+        /*Pseudo Selectors*/
+        a:hover {
+            color: blueviolet; /*what do when we bring close cursor=will show blueviolet color Read more button*/
+            background-color:green /*what do when we bring close cursor=will show green color in background of Read more button */
+
+        }
+        a:visited{
+            color:yellow;
+
+        }
+        a.action{
+            background:blue;
+        }
+        .btn:hover{
+            color:darkgoldenrod;
+            background-color:rgb(223, 245, 201);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h1>This is a my heading </h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, ex illum? Ipsa totam voluptatem
+            blanditiis, quibusdam nobis sapiente accusantium eveniet modi perspiciatis reprehenderit illo veniam
+            accusamus in itaque, tenetur vitae cumque est commodi dolores, voluptatibus vel minus nostrum! Eum dolorem
+            qui, sint quae veritatis autem voluptates est atque enim iusto assumenda dolores? Assumenda facilis sapiente
+            veritatis fuga numquam beatae blanditiis, repellendus ipsa aliquid culpa impedit.</p>
+        <a href="https:Google.com" target=" _blank" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+
+</body>
+
+</html>

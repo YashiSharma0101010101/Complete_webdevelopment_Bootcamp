@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        This is about Loops
+    </div>
+    <script>
+        console.log("This is a tutorial 55");
+        //For Loop
+        let i=0;
+        for(i=0;i<3;i++){
+            console.log(i);
+        }
+        //There are three method to iterate Array
+        //1.Classical For Loop 
+        let Friends=["Rohan","Sanjeev","Deepti","Pooja","Skill-f"]
+        for(let index=0;index<Friends.length;index++){
+            console.log("hello Friend "+ Friends[index]);
+        }
+        //2.Morden Java Script: For each loop
+        Friends.forEach(function F(element){
+            console.log("hello friend "+element+" to morden JavaScript ");
+        })
+        //3.Morden Java Script:For of loo
+        for(element of Friends){
+            console.log("hello friend "+element+" to morden JavaScript Again ");
+
+        }
+        let employee={
+            name:"Yashi",
+            salary:2,
+            channel:"abc"
+
+        }
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+        //While Loop in Js
+        let l=0;
+        while(l<4){
+            console.log(`${l} is less than 4`);
+            l++;
+        }
+        //Do While Loop in Js
+        let j=34;
+        do{
+        console.log(`${j} is a less than 4 and we are inside Do While Loop`);
+          j++;   
+        }while(j<4);
+    </script>
+    
+</body>
+</html>

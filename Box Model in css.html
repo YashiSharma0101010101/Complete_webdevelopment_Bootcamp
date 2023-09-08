@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model,Margin,Padding</title>
+    <style>
+        /*UNIVERSAL SELECTOR*/
+        *{
+            box-sizing:border-box;/*box sizing is used when we adjust width according to margin/padding*/
+
+        }
+        .container{
+            background-color:rgb(231,230,241) ;
+            border:3px solid rgb(15, 149, 158);
+            /*we can set padding for top,bottom,left and right like this*/
+           /* padding-top:79px ;
+            padding-bottom:79px ;
+            padding-left:34px ;
+            padding-right:67px ;*/
+            /*above thing can be written in one way like this*/
+           /* padding:79px 67px 79px 34px;/*padding:top right bottom left*/
+            /*we can set Margin for top,bottom,left and right like this*/
+           /*  Margin-top:50px ;
+            Margin-bottom:50px ;
+            margin-left:34px ;
+            margin-right:67px ;*/
+            /*above thing can be written in one way like this*/
+           /* margin:79px 67px 79px 34px;/*margin:top right bottom left*/
+            /*one more format to define padding and margin*/
+            /*padding:y(top/bottom)x(left/right)*/
+            padding:34px 19px;
+            /*margin:y(top/bottom)x(left/right)*/
+            margin:34px 19px;
+            border-radius:23px;
+            width:533px;
+
+        }
+        .yashi{
+            border:2px solid aqua;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yashi">
+    <div class="container">
+        <h3>This is my First heading</h3>
+        <p id="First">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam doloribus repellendus culpa
+            dolorum iure perferendis possimus? Eaque et quaerat obcaecati aperiam est reprehenderit!</p>
+    </div>
+    <div class="container">
+    <h3>This is my Second heading</h3>
+    <p id="Second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam doloribus repellendus culpa
+        dolorum iure perferendis possimus? Eaque et quaerat obcaecati aperiam est reprehenderit!</p>
+    </div>
+    <div class="container">
+    <h3>This is my Third heading</h3>
+    <p id="Third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam doloribus repellendus culpa
+        dolorum iure perferendis possimus? Eaque et quaerat obcaecati aperiam est reprehenderit!</p>
+    </div>
+</div>
+</body>
+
+</html>

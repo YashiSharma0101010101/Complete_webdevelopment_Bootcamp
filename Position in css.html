@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute,relative,fixed and sticky position in css </title>
+    <style>
+        .container{
+            background-color:khaki ;
+            border:2px solid black;
+            height:3444px;
+        }
+     .box{
+         display: inline-block;/*ek hi line me block lane ke liye*/
+         border:2px solid red;
+         width:150px;
+         height:150px;
+         margin:2px;
+     }
+     /*Css Position:static(default),relative,Fixed and Sticky*/
+     /*1.relative:position the element relative to it's normal position and will leave a gap at it's normal position*/
+     /*2.absolute:position the element relative to Position of it's First Parent*/
+     /*3.fixed:position the element relative to the browser window*/
+     /*4.sticky*/
+     #box3{
+       /* position:relative;
+        top:34px;
+        left:34px;*/
+       /* position:absolute;
+        top:34px;
+        left:34px;*/
+       /* position:fixed;
+        top:34px;
+        right:13px;*/
+        position:sticky;
+        top:3px;
+
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3.chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+   
+</body>
+</html>

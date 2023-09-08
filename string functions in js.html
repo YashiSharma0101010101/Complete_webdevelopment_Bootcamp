@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script String Function/methods</title>
+</head>
+<body>
+    <script>
+        var str="this is a String";
+        console.log(str);
+        //first occurence of a substring: indexOf Method
+        var position=str.indexOf('is');
+        console.log(position);
+        //last occurence of a substring: lastIndexOf Method
+        position=str.lastIndexOf('is');
+        console.log(position);
+        //substring from a string
+         var substr=str.slice(1,7);//take negative value also
+         var substr=str.substring(1,7);
+         console.log(substr);
+        //replaced method
+        var replaced= str.replace("string","yashi");
+        console.log(str);
+        console.log(replaced);
+        console.log(str.toUpperCase());//upper case method
+        console.log(str.toLowerCase());//lower case method
+        //concatanation method
+        var newstring=str.concat("new string");
+        console.log(newstring);
+        //Trim Method
+        var strwithwhitespaces="    this contains white spaces      ";
+        console.log(strwithwhitespaces);
+        console.log(strwithwhitespaces.trim());
+        //charAt Method
+        var char2=str.charAt(2);
+        console.log(char2);
+        //char code Method
+        var code=str.charCodeAt(1);
+        console.log(code); 
+
+
+    </script>
+</body>
+</html>

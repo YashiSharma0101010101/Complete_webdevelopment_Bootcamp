@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+
+<body>
+  <h1>Payment Form</h1>
+  <h3>user details</h3>
+  <form action="backend.php">
+    <label for="name">Name: </label>
+    <!--label tag is used to specify a label for an input of a form-->
+    <div>
+      <input type="text" name="myname" id="name">
+    </div>
+    <br>
+
+    <label for="role">Role:</label>
+    <div>
+      <input type="text" name="myrole" id="role">
+    </div>
+    <br>
+    <label for="email">Email:</label>
+    <div>
+      <input type="email" name="myemail" id="email">
+    </div>
+    <br>
+    <div>
+      Pincode:<input type="number" name=mypincode id="pincode">
+
+    </div>
+    <br>
+    <div>
+      Gender:Male<input type="radio" name="mygender"> Female<input type="radio" name="mygender"> Other<input
+        type="radio" name="mygender">
+    </div>
+    <br>
+    <div>
+      Date:<input type="date" name="mydate" id="date">
+    </div>
+    <br>
+    <div>
+      Bonus:<input type="number" name="mybonus" id="bonus">
+    </div>
+    <br>
+    Write about Yourself: <br><textarea name="mytext" cols="30" rows="10"></textarea>
+    <div>
+      Are You eligible?:<input type="checkbox" name="mycheckbox"> 
+    </div>
+    <br>
+    <h3>Payment Details</h3>
+    <div>
+      <label for="Card Type">Card Type</label>
+      <select name="mycard" id="Card type">
+        <option value=" ">--Select a Card Type</option>
+        <option value="Visa">Visa</option>
+        <option value="rupay">Rupay</option>
+        <option value="Mastercard">MasterCard</option>
+      </select>
+
+    </div>
+    <br>
+    <div>
+      Card Number:<input type="number" name="mycardnum" id=card num>
+    </div>
+    <br>
+    <div>
+      cvv:<input type="password" name="mycvv" id="cvv">
+    </div>
+    <br>
+    <div>
+      PayNow:<input type="submit" name="mypaynow" id="paynow">
+    </div>
+    <br>
+    <div>
+      <input type="Submit" value="Submit Now">
+      <input type="Reset" value="Reset Now">
+    </div>
+
+
+  </form>
+
+</body>
+
+</html>
